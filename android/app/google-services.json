@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "721119557450",
+    "project_id": "kelompok2c2",
+    "storage_bucket": "kelompok2c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721119557450:android:60bb35ff3e78cb815373b3",
+        "android_client_info": {
+          "package_name": "com.example.kelompok2_c2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxqypF3IVejY6-jZZ50LEdnHGM5NTmaNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721119557450:android:a5c5d19778a73d8c5373b3",
+        "android_client_info": {
+          "package_name": "com.example.kelompok_c2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxqypF3IVejY6-jZZ50LEdnHGM5NTmaNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
