@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 themeMode: Provider.of<ThemeModeData>(ctx).themeMode,
-                home: const home_page(),
+                home: const IntroductionPage(),
                 routes: {
 
          '/home': (context) => const home_page(),
