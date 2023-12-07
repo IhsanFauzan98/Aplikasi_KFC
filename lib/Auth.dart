@@ -3,32 +3,37 @@ import 'package:firebase_auth/firebase_auth.dart';
 class Auth {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  Future<bool> regis(String email, String password) async {
+  // Metode login
+  Future<bool> login(String email, String password) async {
     try {
-      await _auth.createUserWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-      // Registrasi berhasil, kembalikan true
+      await _auth.signInWithEmailAndPassword(email: email, password: password);
       return true;
     } catch (e) {
-      // Registrasi gagal, kembalikan false
+      print(e.toString());
       return false;
     }
   }
 
-  Future<bool> login(String email, String password) async {
+  // Metode registrasi
+  Future<bool> regis(String email, String password, String name) async {
     try {
-      final userCredential = await _auth.signInWithEmailAndPassword(
-        email: email,
-        password: password,
-      );
-
-      // Jika berhasil login, kembalikan true
-      return userCredential.user != null;
+      UserCredential authResult = await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      await authResult.user!.updateProfile(displayName: name);
+      // Jika registrasi berhasil, simpan informasi pengguna di sini
+      return true;
     } catch (e) {
-      // Jika terjadi kesalahan atau gagal login, kembalikan false
+      print(e.toString());
       return false;
     }
+  }
+
+  // Metode mendapatkan informasi pengguna yang sudah login
+  Future<User?> getCurrentUser() async {
+    return _auth.currentUser;
+  }
+
+  // Metode logout
+  Future<void> logout() async {
+    await _auth.signOut();
   }
 }
