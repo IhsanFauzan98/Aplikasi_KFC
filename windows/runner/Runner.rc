@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "kelompok_c2" "\0"
+            VALUE "FileDescription", "aplikasi_kfc" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "kelompok_c2" "\0"
+            VALUE "InternalName", "aplikasi_kfc" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "kelompok_c2.exe" "\0"
-            VALUE "ProductName", "kelompok_c2" "\0"
+            VALUE "OriginalFilename", "aplikasi_kfc.exe" "\0"
+            VALUE "ProductName", "aplikasi_kfc" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
