@@ -1,4 +1,4 @@
-# kelompok_c2
+# aplikasi_kfc
 
 A new Flutter project.
 
