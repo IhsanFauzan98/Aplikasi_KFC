@@ -1,12 +1,9 @@
-// ignore_for_file: file_names, prefer_const_constructors, use_build_context_synchronously
-
-import 'package:kelompok_c2/Auth.dart';
-
+import 'package:aplikasi_kfc/Auth.dart';
 import 'Login.dart';
 import 'package:flutter/material.dart';
 
 class Regis extends StatefulWidget {
-  const Regis({super.key});
+  const Regis({Key? key}) : super(key: key);
 
   @override
   State<Regis> createState() => _RegisState();
@@ -14,12 +11,10 @@ class Regis extends StatefulWidget {
 
 class _RegisState extends State<Regis> {
   bool _loading = false;
-
   final _formKey = GlobalKey<FormState>();
-
   final TextEditingController _ctrlEmail = TextEditingController();
-
   final TextEditingController _ctrlPassword = TextEditingController();
+  final TextEditingController _ctrlName = TextEditingController(); // Tambahkan controller untuk nama
 
   Future<void> _showDialog(String title, String content) async {
     return showDialog<void>(
@@ -45,10 +40,12 @@ class _RegisState extends State<Regis> {
     if (!_formKey.currentState!.validate()) return;
     final email = _ctrlEmail.value.text;
     final password = _ctrlPassword.value.text;
+    final name = _ctrlName.value.text; // Dapatkan nama dari controller
+
     setState(() => _loading = true);
 
     // Call your registration method, assuming it returns a boolean indicating success
-    bool registrationSuccess = await Auth().regis(email, password);
+    bool registrationSuccess = await Auth().regis(email, password, name);
 
     setState(() => _loading = false);
 
@@ -62,7 +59,6 @@ class _RegisState extends State<Regis> {
       _showDialog('Pendaftaran Gagal', 'Akun sudah ada atau pendaftaran gagal. Silakan coba lagi.');
     }
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -82,6 +78,20 @@ class _RegisState extends State<Regis> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                TextFormField(
+                  controller: _ctrlName, // Tambahkan field nama
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Silakan Masukkan Nama Lengkap Anda';
+                    }
+                    return null;
+                  },
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    hintText: 'Nama',
+                  ),
+                ),
+                SizedBox(height: 10),
                 TextFormField(
                   controller: _ctrlEmail,
                   validator: (value) {
@@ -112,6 +122,9 @@ class _RegisState extends State<Regis> {
                 ),
                 SizedBox(height: 10),
                 ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: const Color.fromARGB(255, 0, 0, 0),
+                ),
                   onPressed: () => handleSubmit(),
                   child: _loading
                       ? const SizedBox(
@@ -128,9 +141,12 @@ class _RegisState extends State<Regis> {
                   height: 10,
                 ),
                 TextButton(
+                  style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Color.fromARGB(255, 139, 23, 23),
+                ),
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Login()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Login()));
                   },
                   child: Text("Sudah Punya Akun? Klik Disini Untuk Login"),
                 )

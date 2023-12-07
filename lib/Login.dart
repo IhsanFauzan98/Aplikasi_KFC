@@ -1,7 +1,7 @@
 // ignore_for_file: use_build_context_synchronously, prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
-import 'package:kelompok_c2/Auth.dart';
+import 'package:aplikasi_kfc/Auth.dart';
 import 'Regis.dart';
 
 class Login extends StatefulWidget {
@@ -73,7 +73,7 @@ class _LoginState extends State<Login> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                TextFormField(
+                TextFormField(               
                   controller: _ctrlEmail,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
@@ -103,14 +103,19 @@ class _LoginState extends State<Login> {
                 ),
                 SizedBox(height: 10),
                 ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Color.fromARGB(255, 139, 23, 23),
+                ),
                   onPressed: () => handleSubmit(),
+  
                   child: _loading
                       ? const SizedBox(
                           width: 20,
                           height: 20,
                           child: CircularProgressIndicator(
-                            color: Colors.white,
-                            strokeWidth: 2,
+                          color: Colors.white,
+                          strokeWidth: 2,
                           ),
                         )
                       : Text("Submit"),
@@ -119,12 +124,15 @@ class _LoginState extends State<Login> {
                   height: 10,
                 ),
                 TextButton(
+                  style: ElevatedButton.styleFrom(
+                  foregroundColor: const Color.fromARGB(255, 0, 0, 0),
+                ),
                   onPressed: () {
                     Navigator.push(
                         context, MaterialPageRoute(builder: (context) => Regis()));
                   },
                   child: Text(
-                      "Belum Punya Akun? Klik Disini Untuk Register"),
+                      "Belum Punya Akun? Klik Disini Untuk Register" ),
                 )
               ],
             ),
