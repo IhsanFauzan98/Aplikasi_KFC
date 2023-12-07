@@ -62,12 +62,24 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+   - assets/promosi.jpg
+   - assets/SuperStar.png
+   - assets/Chikken.png
+   - assets/DonSeries.png
+   - assets/BucketBBQ.png
+   - assets/Burger.png
+   - assets/HotTea.png
+   - assets/logo.jpg
+   - assets/ManggoFloat.png
+   - assets/MocaFloat.png
+   - assets/promosi2.jpg
+   - assets/promosi3.jpg
+   - assets/SuperStar.png
+   - assets/wingger.png
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
-
+  
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
