@@ -47,21 +47,21 @@ class IntroductionPage extends StatelessWidget {
             body:
                 "KFC bermula dari sebuah stasiun pengisian bensin di Kentucky, tempat Colonel Sanders memasak dan menjual ayam goreng dengan resep khasnya. Kesuksesan awalnya membuatnya membuka restoran pertamanya pada tahun 1930",
             image: Image.asset(
-              '../assets/promosi.jpg',
+              'assets/promosi.jpg',
             ),
           ),
           PageViewModel(
             title: "Tujuan aplikasi KFC",
             body: "Model bisnis KFC yang berbasis pada sistem franchise memungkinkan pertumbuhan dan ekspansi global yang cepat. Ini mencakup kerjasama dengan pengusaha lokal untuk membuka dan mengelola restoran. ",
             image: Image.asset(
-              '../assets/promosi2.jpg',
+              'assets/promosi2.jpg',
             ),
           ),
           PageViewModel(
             title: "Promosi",
             body: "Menyediakan produk dan layanan yang memenuhi atau melebihi harapan pelanggan, menciptakan pengalaman positif, dan membangun loyalitas pelanggan  .",
             image: Image.asset(
-              '../assets/promosi3.jpg',
+              'assets/promosi3.jpg',
             ),
           ),
           ],

@@ -47,7 +47,7 @@ class _WelcomePageState extends State<WelcomePage>
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 139, 23, 23),
         centerTitle: true,
-        title: Text("HELMETS STORE", style: TextStyle(fontWeight: FontWeight.bold)),
+        title: Text("KFC", style: TextStyle(fontWeight: FontWeight.bold)),
       ),
       body: Container(
         child: Center(
@@ -62,7 +62,7 @@ class _WelcomePageState extends State<WelcomePage>
                     duration: Duration(seconds: 1),
                     width: _animationSize.value,
                     height: _animationSize.value,
-                    child: Image.asset('../assets/Logo.jpg'), // Ganti dengan gambar Anda.
+                    child: Image.asset('assets/logo.jpg'), // Ganti dengan gambar Anda.
                   );
                 },
               ),
