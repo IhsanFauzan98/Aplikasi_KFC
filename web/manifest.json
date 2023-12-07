@@ -1,6 +1,6 @@
 {
-    "name": "kelompok_c2",
-    "short_name": "kelompok_c2",
+    "name": "aplikasi_kfc",
+    "short_name": "aplikasi_kfc",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
