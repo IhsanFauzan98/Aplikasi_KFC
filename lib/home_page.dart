@@ -96,7 +96,7 @@ class _MyHomePage extends State<home_page> {
                 0.5, // Tinggi container mengikuti tinggi layar
             margin: EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 20),
             child: Image.asset(
-              '../assets/promosi.jpg',
+              'assets/promosi.jpg',
               fit: BoxFit.cover,
             ),
           ),
@@ -114,7 +114,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/SuperStar.png',
+                  'assets/SuperStar.png',
                 ),
               ),
 
@@ -124,7 +124,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/Chikken.png',
+                  'assets/Chikken.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -135,7 +135,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/DonSeries.png',
+                  'assets/DonSeries.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -146,7 +146,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/BucketBBQ.png',
+                  'assets/BucketBBQ.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -157,7 +157,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/Wingger.png',
+                  'assets/wingger.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -168,7 +168,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/Burger.png',
+                  'assets/Burger.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -179,7 +179,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/ManggoFloat.png',
+                  'assets/ManggoFloat.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
@@ -190,7 +190,7 @@ class _MyHomePage extends State<home_page> {
                 height: screenSize.height * 0.2,
                 margin: EdgeInsets.all(10),
                 child: Image.asset(
-                  '../assets/HotTea.png',
+                  'assets/HotTea.png',
                   width: 50, // Lebar
                   height: 50, // Tinggi
                 ),
