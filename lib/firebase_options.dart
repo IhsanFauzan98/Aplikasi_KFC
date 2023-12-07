@@ -50,19 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDuVesNSe_XR6WRsY4QYRqWfIhL8GIBQq4',
-    appId: '1:721119557450:web:e0f4af8e8a4f5e7d5373b3',
-    messagingSenderId: '721119557450',
-    projectId: 'kelompok2c2',
-    authDomain: 'kelompok2c2.firebaseapp.com',
-    storageBucket: 'kelompok2c2.appspot.com',
+    apiKey: 'AIzaSyBPV65DuCE8mR-UjNL-PKQn-LVPrjXuYwo',
+    appId: '1:43513731741:web:b9813557678e1e70ecd274',
+    messagingSenderId: '43513731741',
+    projectId: 'aplikasi-kfc-25e7f',
+    authDomain: 'aplikasi-kfc-25e7f.firebaseapp.com',
+    storageBucket: 'aplikasi-kfc-25e7f.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDxqypF3IVejY6-jZZ50LEdnHGM5NTmaNY',
-    appId: '1:721119557450:android:a5c5d19778a73d8c5373b3',
-    messagingSenderId: '721119557450',
-    projectId: 'kelompok2c2',
-    storageBucket: 'kelompok2c2.appspot.com',
+    apiKey: 'AIzaSyAiVgR8rx8q6feTnF8mtlRzIo0R3hCNHs0',
+    appId: '1:43513731741:android:a0f9104845ce9ad1ecd274',
+    messagingSenderId: '43513731741',
+    projectId: 'aplikasi-kfc-25e7f',
+    storageBucket: 'aplikasi-kfc-25e7f.appspot.com',
   );
 }
